@@ -1,10 +1,11 @@
-
+import Slider from "../components/Slider";
 
 import profilePic from "../assets/profile.jpg"; // Add your image in src/assets/
 
 const Home = () => {
   return (
-    <div className="hero">
+    <>
+        <div className="hero">
       <div className="hero-text">
         <h1>Professional <span className="highlight">consulting</span> for your app & software.</h1>
         <p>Hey there! i'm John Parker. Coding consultant focused on coding and deployment solutions.</p>
@@ -17,6 +18,11 @@ const Home = () => {
         <img src={profilePic} alt="John Parker" />
       </div>
     </div>
+    <div className="">
+      <Slider />
+    </div>
+    </>
+    
   );
 };
 
