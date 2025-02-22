@@ -38,7 +38,6 @@ export default function FeaturesSection() {
       <div className="min-h-screen w-full flex items-center bg-white p-4 sm:p-8">
         <div className="max-w-7xl mx-auto w-full">
           <div className="grid lg:grid-cols-2 gap-12">
-            {/* Left side content - sticky on desktop only */}
             <div className="relative space-y-6 text-center lg:text-left">
               <div className="lg:sticky lg:top-8">
                 <h2 className="text-2xl lg:text-4xl font-bold text-[#424E53] leading-tight">
@@ -60,10 +59,8 @@ export default function FeaturesSection() {
                 </button>
               </div>
             </div>
-  
-            {/* Right side cards - centered grid */}
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mx-auto w-full">
-              {/* Left Side Cards */}
               <div className="space-y-6">
                 {features
                   .filter((_, index) => index % 2 === 0)
@@ -76,12 +73,12 @@ export default function FeaturesSection() {
                     >
                       <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       <div className="relative flex flex-col items-center">
-                        <div className="w-20 h-20 flex items-center justify-center bg-[#424E53] rounded-full mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                        <div className="w-20 h-20 flex items-center justify-center bg-white rounded-full mb-4 transform group-hover:scale-110 transition-transform duration-300">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
                             fill="currentColor"
-                            className="w-10 h-10 text-white"
+                            className="w-10 h-10 text-[#424E53]"
                           >
                             <path
                               fillRule="evenodd"
@@ -100,8 +97,7 @@ export default function FeaturesSection() {
                     </div>
                   ))}
               </div>
-  
-              {/* Right Side Cards */}
+
               <div className="space-y-6 sm:mt-20">
                 {features
                   .filter((_, index) => index % 2 !== 0)
@@ -114,12 +110,12 @@ export default function FeaturesSection() {
                     >
                       <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       <div className="relative flex flex-col items-center">
-                        <div className="w-20 h-20 flex items-center justify-center bg-[#424E53] rounded-full mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                        <div className="w-20 h-20 flex items-center justify-center bg-white rounded-full mb-4 transform group-hover:scale-110 transition-transform duration-300">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
                             fill="currentColor"
-                            className="w-10 h-10 text-white"
+                            className="w-10 h-10 text-[#424E53]"
                           >
                             <path
                               fillRule="evenodd"
